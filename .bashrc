@@ -22,6 +22,11 @@ if [[ -t 1 ]]; then
     bind '\C-w:unix-filename-rubout'
 fi
 
+#pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # 補完設定
 if [ $OS == 'Mac' ]; then
     if [ -e /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash ]; then

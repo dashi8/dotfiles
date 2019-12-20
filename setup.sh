@@ -29,5 +29,4 @@ vim +PluginInstall +qall
 # 読み込み
 bind -f ~/.inputrc
 source ~/.bashrc
-source ~/.vimrc
 tmux source ~/.tmux.conf

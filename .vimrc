@@ -80,10 +80,10 @@ set hlsearch
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 " US配列用remap
-command W w
-command Q q
-command Wq wq
-command WQ wq
+" command W w
+" command Q q
+" command Wq wq
+" command WQ wq
 
 " sudo上書き保存
 cnoremap w!! w !sudo tee > /dev/null %<CR> :e!<CR>
