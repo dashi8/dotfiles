@@ -6,11 +6,20 @@ elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
 fi
 
 # alias
-alias ls='ls -G'
-alias ll='ls -la'
+alias fcd='source /usr/local/bin/fcd.sh'
+alias l='ls -laGF'
+alias lg='ls -laGF | grep --color=auto'
+alias sb='source ~/.bashrc'
+alias aspell='aspell --lang=en -c -t $1'
 
 if [ $OS == 'Mac' ]; then
     alias o='open'
+fi
+
+# Ctrl-wの単語削除をスラッシュ区切りに設定
+if [[ -t 1 ]]; then
+    stty werase undef
+    bind '\C-w:unix-filename-rubout'
 fi
 
 # 補完設定

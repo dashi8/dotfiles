@@ -26,3 +26,8 @@ rm -rf $SCRIPT_DIR/.vim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git $SCRIPT_DIR/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
+# 読み込み
+bind -f ~/.inputrc
+source ~/.bashrc
+source ~/.vimrc
+tmux source ~/.tmux.conf

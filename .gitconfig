@@ -9,6 +9,7 @@
     g = log --graph --topo-order --all --date=short --pretty=format:'%C(green)%h %C(blue)%ad %C(cyan)%an%C(red)%d %C(reset)%s'
     cm = commit -m
     difff = diff --word-diff
+    lol = log --graph --decorate --pretty=oneline --all --abbrev-commit
 [include]
     path = ~/.gitconfig.local
 
