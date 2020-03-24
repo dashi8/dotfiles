@@ -21,6 +21,7 @@ make_link $SCRIPT_DIR/.gitconfig ~/.gitconfig
 make_link $SCRIPT_DIR/.bashrc ~/.bashrc
 make_link $SCRIPT_DIR/.inputrc ~/.inputrc
 make_link $SCRIPT_DIR/.latexmkrc ~/.latexmkrc
+make_link $SCRIPT_DIR/.inputrc ~/.inputrc
 
 # vim plugin setup
 rm -rf $SCRIPT_DIR/.vim/bundle
