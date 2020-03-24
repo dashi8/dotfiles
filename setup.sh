@@ -20,6 +20,7 @@ make_link $SCRIPT_DIR/.tmux.d ~/.tmux.d
 make_link $SCRIPT_DIR/.gitconfig ~/.gitconfig
 make_link $SCRIPT_DIR/.bashrc ~/.bashrc
 make_link $SCRIPT_DIR/.inputrc ~/.inputrc
+make_link $SCRIPT_DIR/.latexmkrc ~/.latexmkrc
 
 # vim plugin setup
 rm -rf $SCRIPT_DIR/.vim/bundle
