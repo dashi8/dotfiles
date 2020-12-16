@@ -7,12 +7,34 @@ Plugin 'VundleVim/Vundle.vim'
 
 " 導入したいプラグインを以下に列挙
 " Plugin '[Github Author]/[Github repo]' の形式で記入
+" git差分を左に表示
 Plugin 'airblade/vim-gitgutter'
+" vimコマンドでgit操作
 Plugin 'tpope/vim-fugitive'
+" vim内からディレクトリ操作
+Plugin 'preservim/nerdtree'
+" ステータスバー
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+" アイコンをnerdtreeに表示
+Plugin 'ryanoasis/nerd-fonts'
+" ファイルタイプ別のアイコン
+Plugin 'ryanoasis/vim-devicons'
 
 call vundle#end()
 filetype plugin indent on
 " End Bundle setup
+
+" nerdtree設定
+"隠しファイルをデフォルトで表
+let NERDTreeShowHidden = 1
+"キーマップ（ctrl+nで起動でき
+map <C-e> :NERDTreeToggle<CR>
+
+" airline設定
+let g:airline_theme = 'wombat'               " テーマの指定
+let g:airline#extensions#tabline#enabled = 1 " タブラインを表示
+let g:airline_powerline_fonts = 1            " Powerline Fontsを利用
 
 syntax on
 
